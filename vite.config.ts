@@ -8,7 +8,7 @@ import Components from "unplugin-vue-components/vite";
 import { defineConfig } from "vite";
 import {
     createStyleImportPlugin,
-    ElementPlusResolve,
+    ElementPlusResolve
 } from "vite-plugin-style-import";
 import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 import vueSetupExtend from "vite-plugin-vue-setup-extend";
@@ -21,7 +21,7 @@ export default defineConfig({
     proxy: {
       "/api": {
         // target: `http://127.0.0.1:8082 http://60.205.120.196:8082`,
-        target: `http://127.0.0.1:8082`,
+        target: `http://60.205.120.196:8082`,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, "/api"),
       },
